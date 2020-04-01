@@ -82,3 +82,6 @@ body {
     margin-right: 20px;
   }
   
+  p {
+    float: left;
+  }
