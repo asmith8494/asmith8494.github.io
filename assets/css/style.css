@@ -1,88 +1,183 @@
-/*
-Each of these CSS elements is associated with an HTML Element, Class, or ID.
-Flip between this CSS file and the HTML to see how things line up.
-Experiment with deleting lines of code from the CSS to see how it affects the web page when you refresh in the browser.
-*/
+
+/* Navbar */
+
+.container {
+  max-width: 80%;
+}
+
+.container-lg {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-brand {
+  background-color: teal;
+  padding: 20px 20px;
+}
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover {
+  color: #FFF;
+}
+
+.navbar-nav {
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navbar-nav .nav-link {
+  padding: 0 .5rem;
+}
+
+.nav-item {
+  border-right: 1px solid #CCC;
+}
+
+.nav-item:last-child{
+  border-right: none;
+}
+
+@media (min-width: 768px) {
+
+  .container-lg{
+  }
+
+  .content-box .img-fluid {
+      max-width: 35%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-lg {
+      max-width: 100%;
+  }
+
+  .navbar .container-lg,
+  .navbar-brand {
+      display: block;
+  }
+
+  .navbar {
+      display: block;
+  }
+
+  .navbar-brand {
+      margin-right: -1rem;
+      margin-left: -1rem;
+      text-align: center;
+  }
+
+  .navbar-nav {
+      text-align: c;
+      flex-direction: row;
+  }
+
+  .content-box img {
+      height: auto;
+      margin-right: 1rem;
+      margin-top: .5rem;
+      margin-bottom: .5rem;
+  }
+
+  .content-box .img-fluid {
+      max-width: 100%;
+  }
+
+  .container {
+      margin-left: 5%;
+      margin-right: 5%;
+      max-width: 100%;
+      width: auto!important;
+  }
+}
+
+
+/* Main */
+
+main {
+  background-color: #CCC;
+  min-height: 90vh;
+}
+
+main .container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.content-box {
+  background-color: #FFF;
+  padding: 20px;
+  font-size: large;
+}
+
+.content-box img {
+  margin-right: 1rem;
+  margin-top: .5rem;
+  margin-bottom: -.5rem;
+}
+
+p {
+  text-align: center;
+  line-height: 2rem;
+}
+
+/* Footer */
 
 body {
-    /* Box-model */
-    padding: 0;
-  
-    /* Positioning */
-    margin: 0;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  
-    /* Typography */
-    font-size: 18px;
-    line-height: 150%;
-    color: #333;
-  
-    /* Visual */
-    background: #efeee7;
-  }
-  
-  header {
-    background: #d21034;
-  }
-  
-  h1 {
-    /* Box-model */
-    padding: 20px 0;
-  
-    /* Positioning */
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 28px;
-  
-    /* Typography */
-    color: #eee;
-    text-align: center;
-  
-    /* Visual */
-    background: #333;
-  }
-  
-  h2 {
-    font-size: 24px;
-  }
-  
-  a {
-    color: #d21034;
-  }
-  
-  .container {
-    /* Box-model */
-    width: 1024px;
-  
-    /* Positioning */
-    margin: 0 auto;
-  }
-  
-  #main-bio,
-  #contact-info,
-  #bio-image {
-    float: left;
-  }
-  
-  #main-bio {
-    width: 70%;
-  }
-  
-  #contact-info {
-    width: 30%;
-  }
-  
-  #bio-image {
-    /* Box-model */
-    width: 650px;
-    height: 433px;
-  
-    /* Positioning */
-  
-    margin-right: 20px;
-  }
-  
-  p {
-    margin-top: 20px;
-    float: left;
-  }
+  background-color: grey;
+}
+
+footer {
+  text-align: center;
+  background-color: grey;
+  border-top: teal 5px solid;
+  color: white;
+  font-size: smaller;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+h1 {
+  border-bottom: 2px solid #CCC;
+  color: teal;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* form */
+form .btn {
+  background-color: teal;
+  color: white;
+  border-radius: 0rem;
+}
+
+/* cards */
+.card {
+  margin-bottom: 20px;
+}
+
+.card img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  margin: 0 0 0 0;
+}
+
+.card .btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: teal;
+  color: white;
+  position: absolute;
+  border-radius: 0;
+  bottom: 0;
+  margin-bottom: 10px;
+}
