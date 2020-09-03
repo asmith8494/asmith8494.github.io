@@ -19,6 +19,9 @@ function Contact() {
           <Form.Control as="textarea" rows="8" />
         </Form.Group>
       </Form>
+      <Button>
+    Submit
+  </Button>
     </Container>
   )
 }
