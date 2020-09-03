@@ -1,0 +1,34 @@
+h1 {
+  text-align: center;
+}
+
+.row {
+  margin-right: 0;
+}
+
+.col-8 {
+  padding-right: 0;
+  padding-left: 15px;
+}
+
+.col-12 {
+  height: auto;
+  padding-right: 0;
+  padding-left: 15px;
+}
+
+img {
+  margin-right: 15px;
+  
+  height: 33%;
+  width: 33%;
+  float: left;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+}
