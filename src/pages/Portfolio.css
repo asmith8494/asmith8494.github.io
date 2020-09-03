@@ -1,0 +1,12 @@
+.card {
+
+  margin: auto;
+}
+
+.card-title{
+  text-align: center;
+}
+
+#cardcol {
+  margin-left: 15px;
+}

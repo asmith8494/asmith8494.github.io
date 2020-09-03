@@ -1,5 +1,4 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
 import Image from 'react-bootstrap/Image';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
@@ -19,7 +18,7 @@ function About() {
             </Jumbotron>
           </Col>
         </Row>
-        <Row height={'90%'}>
+        <Row id="mainbody">
           <Col lg={12}>
             
                 <Image src={profilePicture} fluid/>
