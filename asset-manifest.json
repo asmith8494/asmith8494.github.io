@@ -1,23 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.daa327a1.chunk.css",
-    "main.js": "/static/js/main.d14ac8a1.chunk.js",
-    "main.js.map": "/static/js/main.d14ac8a1.chunk.js.map",
+    "main.css": "/static/css/main.1cb232e3.chunk.css",
+    "main.js": "/static/js/main.3239606b.chunk.js",
+    "main.js.map": "/static/js/main.3239606b.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4e7c19c6.js",
     "runtime-main.js.map": "/static/js/runtime-main.4e7c19c6.js.map",
-    "static/js/2.2ba27d00.chunk.js": "/static/js/2.2ba27d00.chunk.js",
-    "static/js/2.2ba27d00.chunk.js.map": "/static/js/2.2ba27d00.chunk.js.map",
+    "static/js/2.b4bc9df0.chunk.js": "/static/js/2.b4bc9df0.chunk.js",
+    "static/js/2.b4bc9df0.chunk.js.map": "/static/js/2.b4bc9df0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.45318d94461e666833080e1988a757d4.js": "/precache-manifest.45318d94461e666833080e1988a757d4.js",
+    "precache-manifest.ac5a12e4fc132fea6a0283934c1f9ec9.js": "/precache-manifest.ac5a12e4fc132fea6a0283934c1f9ec9.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.daa327a1.chunk.css.map": "/static/css/main.daa327a1.chunk.css.map",
-    "static/js/2.2ba27d00.chunk.js.LICENSE.txt": "/static/js/2.2ba27d00.chunk.js.LICENSE.txt",
+    "static/css/main.1cb232e3.chunk.css.map": "/static/css/main.1cb232e3.chunk.css.map",
+    "static/js/2.b4bc9df0.chunk.js.LICENSE.txt": "/static/js/2.b4bc9df0.chunk.js.LICENSE.txt",
+    "static/media/ClickPlaySC.PNG": "/static/media/ClickPlaySC.cb807647.PNG",
+    "static/media/CodeQuiz.PNG": "/static/media/CodeQuiz.1f7fa4ff.PNG",
+    "static/media/CookSC.PNG": "/static/media/CookSC.1babbf6b.PNG",
+    "static/media/EmployeeDirectorySC.PNG": "/static/media/EmployeeDirectorySC.41f0e195.PNG",
+    "static/media/FitnessTrackerSC.PNG": "/static/media/FitnessTrackerSC.a427f370.PNG",
+    "static/media/NoteTakerSC.PNG": "/static/media/NoteTakerSC.2fbb3e0f.PNG",
+    "static/media/ProgressiveBudgetSC.PNG": "/static/media/ProgressiveBudgetSC.38925348.PNG",
+    "static/media/WeatherDashSC.PNG": "/static/media/WeatherDashSC.77c65de7.PNG",
     "static/media/profilepicture.jpg": "/static/media/profilepicture.3e3fa801.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.4e7c19c6.js",
-    "static/js/2.2ba27d00.chunk.js",
-    "static/css/main.daa327a1.chunk.css",
-    "static/js/main.d14ac8a1.chunk.js"
+    "static/js/2.b4bc9df0.chunk.js",
+    "static/css/main.1cb232e3.chunk.css",
+    "static/js/main.3239606b.chunk.js"
   ]
 }
