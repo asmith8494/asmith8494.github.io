@@ -1,13 +1,16 @@
 {
   "name": "personal-website",
   "private": true,
+  "homepage": "https://asmith8494.github.io",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@types/bootstrap": "^5.2.10",
