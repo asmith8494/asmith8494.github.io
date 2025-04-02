@@ -21,10 +21,10 @@ function TopNav() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="/resume">Resume</Nav.Link>
-                        <Nav.Link href="#link">Contact</Nav.Link>
+                        <Nav.Link href="#/resume">Resume</Nav.Link>
+                        <Nav.Link href="#/contact">Contact</Nav.Link>
                         <NavDropdown title="Portfolio" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/ProfessionalProjects">Professional Projects</NavDropdown.Item>
+                            <NavDropdown.Item href="#/professional-projects">Professional Projects</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Header>Personal Projects</NavDropdown.Header>
                             <NavDropdown.Item href="#action/3.4">

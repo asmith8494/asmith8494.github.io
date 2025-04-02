@@ -34,6 +34,31 @@
     }
 }
 
+.resume-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa; // Light background for better readability
+}
+
+.pdf-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.pdf-wrapper {
+    width: 100%;
+    max-width: 800px; // Limit the width of the PDF container
+    background-color: #ffffff; // White background for the container
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for elevation
+    border-radius: 8px; // Rounded corners
+    overflow: hidden; // Prevent content overflow
+    padding: 10px; // Add padding inside the container
+}
+
 #root {
     // max-width: 1280px;
     // margin: 0 auto;
