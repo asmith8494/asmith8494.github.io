@@ -1,7 +1,5 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import './index.css'
-// Import our custom CSS
 import './scss/styles.scss'
 
 import App from './App.tsx'
