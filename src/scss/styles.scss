@@ -1,2 +1,46 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
+.home-page {
+    height: 100vh; // Full viewport height
+    width: 100vw; // Full viewport width
+    background-color: black; // Fallback color for browsers that do not support background images
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    // Default background
+    background-image: url('../assets/AnthonySmithProfilePicture.png');
+
+    // Breakpoint-specific backgrounds
+    @media (min-width: 576px) {
+        // sm breakpoint
+        background-image: url('../assets/AnthonySmithProfilePicture.png');
+    }
+
+    @media (min-width: 768px) {
+        // md breakpoint
+        background-image: url('../assets/AnthonySmithProfilePicture.png');
+    }
+
+    @media (min-width: 992px) {
+        // lg breakpoint
+        background-image: url('../assets/AnthonySmithProfilePicture.png');
+    }
+
+    @media (min-width: 1200px) {
+        // xl breakpoint
+        background-image: url('../assets/AnthonySmithProfilePicture.png');
+    }
+}
+
+#root {
+    // max-width: 1280px;
+    // margin: 0 auto;
+    // padding: 2rem;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+}
