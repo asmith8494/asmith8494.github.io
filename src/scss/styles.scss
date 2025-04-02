@@ -35,7 +35,7 @@
 }
 
 .resume-page {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     background-color: #f8f9fa; // Light background for better readability
@@ -51,7 +51,7 @@
 
 .pdf-wrapper {
     width: 100%;
-    max-width: 800px; // Limit the width of the PDF container
+    max-width: 1200px; // Limit the width of the PDF container
     background-color: #ffffff; // White background for the container
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for elevation
     border-radius: 8px; // Rounded corners

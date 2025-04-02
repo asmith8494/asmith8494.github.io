@@ -12,7 +12,7 @@ GlobalWorkerOptions.workerSrc = new URL('pdfjs-dist/build/pdf.worker.min.js', im
 
 function ResumePage() {
     return (
-        <div className="resume-page" style={{ height: '100vh' }}>
+        <div className="resume-page" style={{ height: '100%' }}>
             <TopNav />
             <Container className="pdf-container d-flex justify-content-center align-items-center">
                 <div className="pdf-wrapper">
