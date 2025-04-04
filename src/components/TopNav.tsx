@@ -15,9 +15,9 @@ function TopNav() {
                         src={anthonyIcon}
                         width="30"
                         height="30"
-                        className="d-inline-block align-top"
-                    />{' '}
-                    Anthony Smith | Software Engineer
+                        className="d-none d-sm-inline-block d-inline-block align-top rounded rounded-3 me-2"
+                    />
+                    <span className="d-inline-block">Anthony Smith {<span className="d-none d-sm-inline-block">| Software Engineer</span>}</span>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
