@@ -17,7 +17,7 @@ function ResumePage() {
             <Container className="pdf-container d-flex justify-content-center align-items-center">
                 <div className="pdf-wrapper">
                     <Worker workerUrl={GlobalWorkerOptions.workerSrc}>
-                        <Viewer fileUrl="/Anthony_Smith_Resume.pdf" />
+                        <Viewer fileUrl="/Anthony_Smith_Resume_Censored.pdf" />
                     </Worker>
                 </div>
             </Container>
