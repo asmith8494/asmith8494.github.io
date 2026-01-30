@@ -1,67 +1,67 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import anthonyIcon from '../assets/AnthonySmithIcon.svg';
-import { EnvelopeAt, Github, Linkedin } from 'react-bootstrap-icons';
+import { useState, useEffect } from "react";
+import { Linkedin, Github, EnvelopeAt, List, X } from "react-bootstrap-icons";
+
+function scrollToSection(id: string) {
+    const el = document.getElementById(id);
+    if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+    }
+}
 
 function TopNav() {
+    const [scrolled, setScrolled] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    useEffect(() => {
+        const onScroll = () => setScrolled(window.scrollY > 50);
+        window.addEventListener("scroll", onScroll, { passive: true });
+        return () => window.removeEventListener("scroll", onScroll);
+    }, []);
+
+    const handleNav = (e: React.MouseEvent, sectionId: string) => {
+        e.preventDefault();
+        setMenuOpen(false);
+        scrollToSection(sectionId);
+    };
+
+    const closeMenu = () => setMenuOpen(false);
+
     return (
-        <Navbar expand="md" className="bg-body-tertiary">
-            <Container>
-                <Navbar.Brand href="/">
-                    <img
-                        alt=""
-                        src={anthonyIcon}
-                        width="30"
-                        height="30"
-                        className="d-none d-sm-inline-block d-inline-block align-top rounded rounded-3 me-2"
-                    />
-                    <span className="d-inline-block">Anthony Smith {<span className="d-none d-sm-inline-block">| Software Engineer</span>}</span>
-                </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#/resume">Resume</Nav.Link>
-                        <NavDropdown title="Portfolio" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#/professional-projects">Professional Projects</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Header>Personal Projects</NavDropdown.Header>
-                            {/* <NavDropdown.Item href="#action/3.4">
-                                Sudoku App
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.5">
-                                Idle Game
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.6">
-                                Inventory Tracker App
-                            </NavDropdown.Item> */}
-                        </NavDropdown>
-                        <Nav.Link
-                            href="https://www.linkedin.com/in/anthony-smith-41a24543/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+        <nav className={`site-nav ${scrolled ? "scrolled" : ""}`}>
+            <div className="nav-inner">
+                <a href="#" className="nav-brand" onClick={(e) => handleNav(e, "home")}>
+                    anthony<span className="accent">.</span>smith
+                </a>
+
+                <button
+                    className="nav-toggle"
+                    onClick={() => setMenuOpen(!menuOpen)}
+                    aria-label="Toggle menu"
+                >
+                    {menuOpen ? <X /> : <List />}
+                </button>
+
+                <div className={`nav-menu ${menuOpen ? "open" : ""}`}>
+                    <ul className="nav-links">
+                        <li><a href="#" onClick={(e) => handleNav(e, "about")}>About</a></li>
+                        <li><a href="#" onClick={(e) => handleNav(e, "projects")}>Projects</a></li>
+                        <li><a href="#/resume" onClick={closeMenu}>Resume</a></li>
+                        <li><a href="#" onClick={(e) => handleNav(e, "contact")}>Contact</a></li>
+                    </ul>
+                    <div className="nav-socials">
+                        <a href="https://www.linkedin.com/in/anthony-smith-41a24543/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <Linkedin />
-                        </Nav.Link>
-                        <Nav.Link
-                            href="mailto:anthony.smith353@gmail.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        </a>
+                        <a href="mailto:anthony.smith353@gmail.com" aria-label="Email">
                             <EnvelopeAt />
-                        </Nav.Link>
-                        <Nav.Link
-                            href="https://github.com/asmith8494"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
+                        </a>
+                        <a href="https://github.com/asmith8494" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                             <Github />
-                        </Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
     );
 }
 
